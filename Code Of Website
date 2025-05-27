@@ -25,9 +25,49 @@
     <h2>Welcome to Delish Diner</h2>
     <p>Your favorite place for mouth-watering food.</p>
     <a href="#menu" class="btn">Explore Menu</a>
-  </s…
-[13:29, 27/5/2025] Anamica SGT 🤍: Html
-[13:30, 27/5/2025] Anamica SGT 🤍: * {
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="item">
+        <h3>🍕 Pizza</h3>
+        <p>Cheesy, crispy and delicious.</p>
+      </div>
+      <div class="item">
+        <h3>🍔 Burger</h3>
+        <p>Juicy patties with fresh toppings.</p>
+      </div>
+      <div class="item">
+        <h3>🥗 Salad</h3>
+        <p>Fresh and healthy greens.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Delish Diner, we believe food should be fresh, flavorful, and fun.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Delish Diner. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
   margin: 0;
   padding: 0;
   box-sizing: border-box;
