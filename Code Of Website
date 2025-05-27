@@ -1,0 +1,91 @@
+[13:29, 27/5/2025] Anamica SGT 🤍: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delish Diner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Delish Diner 🍽️</h1>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Delish Diner</h2>
+    <p>Your favorite place for mouth-watering food.</p>
+    <a href="#menu" class="btn">Explore Menu</a>
+  </s…
+[13:29, 27/5/2025] Anamica SGT 🤍: Html
+[13:30, 27/5/2025] Anamica SGT 🤍: * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+#nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile-menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1600x600/?restaurant,food') no-repeat center center/cover;
+  color: white;
+  padding: 6rem 2rem;
+  text-a…
+[13:30, 27/5/2025] Anamica SGT 🤍: function toggleMenu() {
+  const links = document.getElementById('nav-links');
+  links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+}
+
+function submitForm(event) {
+  event.preventDefault();
+  document.getElementById("form-message").innerText = "Thanks! We’ll get back to you soon.";
+  event.target.reset();
+}
