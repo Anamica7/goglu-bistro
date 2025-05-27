@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goglu</title>
+   <!-- Cute Fonts -->
+    <!-- Cute Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+   
+
+</head>
+<body>
+    <button id="darkModeToggle">🌙</button>
+    
+      
+    <header>
+        <h1>Goglu Bistro</h1>
+       
+
+
+        <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#recipes">Recipes</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+         
+        
+
+          <section id="home">
+            <h2>Welcome to Goglu Bistro 💖</h2>
+            <p>Serving up flavor, flair, and foodie fantasy 24/7 ✨</p>
+          </section>
+          
+    
+          
+       
+        <div class="hearts-container" id="heartsContainer"></div>
+       
+
+
+    </header>
+    
+    <div id="searchBarContainer">
+      <input type="text" id="menuSearch" placeholder="Search your craving… 🍜🍰🍹🔍">
+      <ul id="suggestions"></ul>
+    </div>
+    <section id ="menu">
+
+       
+          
+        <h2> Our Menu</h2>
+        
+        
+        <div class="carousel-container">
+            <div class="carousel" id="menuCarousel">
+
+              <div class="carousel-item">
+                <img src="img/burger.jpg" alt="Burger">
+                <h3> Goglu Special Burger</h3>
+                <p>Juicy AF and dressed to impress 🍔✨</p>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/salad.jpg" alt="Salad">
+                <h3>Fresh Bowl</h3>
+                <p>So green, it’s giving healthy queen 🥗💚</p>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/pasta.jpg" alt="Pasta">
+                <h3>Slay-ghetti</h3>
+                <p>Serving sauce & sass 🍝💅</p>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/ramen.jpg" alt="Ramen">
+                <h3>Drama Ramen</h3>
+                <p>Spicy, steamy, and full of main character energy 🍜🔥</p>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/cheesecake.jpg" alt="Cheesecake">
+                <h3>Sugar Daddy Cheesecake</h3>
+                <p>Rich, smooth, and guaranteed to ruin your mascara (in a good way) 🍰💋</p>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/goglu-glow.jpg" alt="Goglu Glow Mocktail">
+                <h3>Goglu Glow</h3>
+                <p>Glows like your vibe — citrusy, fizzy, and full of main character energy ✨🍊🧃</p>
+              </div>
+              
+              
+              
+            </div>
+            <button class="carousel-btn left" onclick="moveCarousel(-1)">←</button>
+            <button class="carousel-btn right" onclick="moveCarousel(1)">→</button>
+          </div>
+          
+          
+       
+        
+        
+
+           
+        </div>
+    </section>
+
+    <section id ="about">
+        <h2>About Us</h2>
+        <p>Welcome to GOGŁU</span> — where bold flavors meet bad b*tch energy.<br><br>
+            We're not just serving Chinese food — we're serving vibes, spice, and straight-up deliciousness. From fire dumplings to noodles that <i>slap</i>, everything on our menu is a whole mood.<br><br>
+            This isn’t your grandma’s takeout. It’s hot wok energy with a side of attitude. Whether you're rolling in for a late-night bite or ordering in like the boss you are, Goglu’s got your cravings handled.<br><br>
+            <span>⚡ Fresh. 🔥 Fierce. 💅 Flavor that doesn’t play.</span><br><br>
+            Eat cute. Slurp loud. Live spicy. That’s the <span>Goglu way 💕</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="text" name="email" placeholder="Your email" required>
+            <textarea name ="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+
+
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+
+
+      
+    
+</body>
+</html>
